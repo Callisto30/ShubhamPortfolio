@@ -9,7 +9,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "shubham-portfolio": {
+    "riya-portfolio": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/shubham-portfolio",
+            "outputPath": "dist/riya-portfolio",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -73,10 +73,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "shubham-portfolio:build:production"
+              "buildTarget": "riya-portfolio:build:production"
             },
             "development": {
-              "buildTarget": "shubham-portfolio:build:development"
+              "buildTarget": "riya-portfolio:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -84,7 +84,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "shubham-portfolio:build"
+            "buildTarget": "riya-portfolio:build"
           }
         },
         "test": {

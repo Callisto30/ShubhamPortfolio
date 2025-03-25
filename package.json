@@ -1,5 +1,5 @@
 {
-  "name": "shubham-portfolio",
+  "name": "riya-portfolio",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:shubham-portfolio": "node dist/shubham-portfolio/server/server.mjs"
+    "serve:ssr:riya-portfolio": "node dist/riya-portfolio/server/server.mjs"
   },
   "private": true,
   "dependencies": {
@@ -23,17 +23,19 @@
     "@angular/ssr": "^17.2.1",
     "@ionic/angular": "^7.7.4",
     "@vercel/analytics": "^1.2.2",
-    "express": "^4.18.2",
+    "express": "^4.21.2",
     "ionic-angular": "^3.9.10",
     "rxjs": "~7.8.0",
+    "riya-portfolio": "file:",
     "swiper": "^11.0.6",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^17.2.1",
-    "@angular/cli": "^17.2.1",
-    "@angular/compiler-cli": "^17.2.0",
+    "@angular-devkit/build-angular": "^19.2.4",
+    "@angular/cli": "^19.2.4",
+    "@angular/compiler-cli": "^19.2.4",
+    "@angular/language-service": "^19.2.4",
     "@types/express": "^4.17.17",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^18.18.0",

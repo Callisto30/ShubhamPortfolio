@@ -3,7 +3,8 @@
   "cli": {
     "cache": {
       "environment": "all"
-    }
+    },
+    "analytics": "d6cd75ac-1356-4b7b-b55a-ea5c2a07c2b5"
   },
   "version": 1,
   "newProjectRoot": "projects",

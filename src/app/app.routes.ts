@@ -1,8 +1,6 @@
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { HomepageComponent } from './home-page/home-page.component';
-import { IonicModule } from '@ionic/angular';
-import { BrowserModule } from '@angular/platform-browser';
+import { HomepageComponent } from './home-page/home-page.component';  // Ensure the correct path
 
 const routes: Routes = [
   {
@@ -13,12 +11,8 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [HomepageComponent],
-  imports: [RouterModule.forRoot(routes),IonicModule, BrowserModule],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  imports: [RouterModule.forRoot(routes)],  // Only RouterModule should be imported here
   exports: [RouterModule],
-  bootstrap: [HomepageComponent],
 })
-export class AppRoutingModule { }
-
+export class AppRoutingModule {}
 

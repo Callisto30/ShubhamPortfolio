@@ -13,9 +13,36 @@
 </head>
 
 <body>
-  <!-- partial:index.partial.html -->
 
   <body>
+    <svg viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+          <linearGradient id="waveGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#00FFFF" />  <!-- Neon Blue -->
+              <stop offset="100%" stop-color="#FF1493" /> <!-- Neon Pink -->
+          </linearGradient>
+
+          <linearGradient id="waveGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FF1493" />  <!-- Neon Pink -->
+              <stop offset="100%" stop-color="#C0C0C0" /> <!-- Metallic Silver -->
+          </linearGradient>
+
+          <linearGradient id="waveGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#C0C0C0" /> <!-- Metallic Silver -->
+              <stop offset="100%" stop-color="#00FFFF" />  <!-- Neon Blue -->
+          </linearGradient>
+      </defs>
+
+      <!-- Animated Waves -->
+      <path class="wave" d="M0,700 Q360,550 720,700 T1440,700 V900 H0 Z" fill="url(#waveGradient1)" opacity="0.7"/>
+      <path class="wave" d="M0,650 Q360,500 720,650 T1440,650 V900 H0 Z" fill="url(#waveGradient2)" opacity="0.6"/>
+      <path class="wave" d="M0,600 Q360,450 720,600 T1440,600 V900 H0 Z" fill="url(#waveGradient3)" opacity="0.5"/>
+      <path class="wave" d="M0,550 Q360,400 720,550 T1440,550 V900 H0 Z" fill="url(#waveGradient1)" opacity="0.4"/>
+      <path class="wave" d="M0,500 Q360,350 720,500 T1440,500 V900 H0 Z" fill="url(#waveGradient2)" opacity="0.3"/>
+      <path class="wave" d="M0,450 Q360,300 720,450 T1440,450 V900 H0 Z" fill="url(#waveGradient3)" opacity="0.2"/>
+      <path class="wave" d="M0,400 Q360,250 720,400 T1440,400 V900 H0 Z" fill="url(#waveGradient1)" opacity="0.1"/>
+  </svg>
+
     <section>
       <div class="icon-container">
         <div class="icon-box about" data-modal="about">
@@ -58,21 +85,21 @@
 
           <div class="img-frame">
             <img
-              src="https://cdn.dribbble.com/users/4781516/screenshots/10796279/media/04eb24250e23400dc0162080a231b70c.gif"
-              alt="" />
+              src="assets/image.png"
+              alt="Image" />
           </div>
 
 
 
 
           <div class="hero-content">
-            <h1>Shubham Patel</h1>
-            <p>
-              I'm a Senior Senior Full Stack Software developer. I have dedicated myself to creating
-              visually appealing and user-friendly softwares. I'm always open to
-              using new skill sets and I believe in the power of collaboration,
-              working closely with designers and back-end developers to deliver
-              cohesive and effective solutions.
+            <h1>Riya Patel</h1>
+            <p class="mac-text">
+              I'm a Software Engineer passionate about building dynamic, high-performing applications and optimizing cloud infrastructure.
+              With expertise in full-stack development using React, Node.js, and Django,
+              I craft seamless user experiences while leveraging AWS & Microsoft Azure to enhance scalability and reliability.
+              I thrive on innovation, love solving complex challenges, and believe that great technology is built through curiosity, collaboration,
+              and a touch of creativity!.
             </p>
           </div>
         </div>
@@ -101,10 +128,10 @@
             <div class="skill-list">
               <h1>Programming Languages</h1>
               <ul>
-                <li><i class="fab fa-java"></i> Java</li>
-                <li><i class="fab fa-js"></i> TypeScript</li>
                 <li><i class="fab fa-python"></i> Python</li>
                 <li><i class="fab fa-js"></i> JavaScript</li>
+                <li><i class="fab fa-java"></i> Java</li>
+              <li><i class="fas fa-file-code"></i> TypeScript</li>
               </ul>
             </div>
 
@@ -116,20 +143,17 @@
                 <li><i class="fab fa-node-js"></i> Node.js</li>
                 <li><i class="fab fa-node-js"></i> Express.js</li>
                 <li><i class="fab fa-angular"></i> Angular</li>
-                <li><i class="fab fa-java"></i> Spring Boot</li>
                 <li><i class="fab fa-react"></i> Material UI</li>
-                <li><i class="fab fa-angular"></i> Rx.JS</li>
+                <li><i class="fas fa-network-wired"></i> REST APIs</li>
               </ul>
             </div>
 
             <div class="skill-list">
               <h1>Database Systems</h1>
               <ul>
-                <li><i class="fas fa-database"></i> MySQL</li>
-                <li><i class="fas fa-database"></i> MongoDB</li>
-                <li><i class="fas fa-database"></i> FireStore</li>
-                <li><i class="fas fa-database"></i> NoSQL</li>
-                <li><i class="fas fa-database"></i> GraphQL</li>
+                <li><i class="fas fa-server"></i> MySQL</li>
+                <li><i class="fas fa-leaf"></i> MongoDB</li>
+                <li><i class="fas fa-boxes"></i> NoSQL</li>
                 <li><i class="fas fa-database"></i> PostgreSQL</li>
               </ul>
             </div>
@@ -138,8 +162,7 @@
               <h1>Cloud Technologies</h1>
               <ul>
                 <li><i class="fab fa-aws"></i> Amazon Web Services</li>
-                <li><i class="fab fa-google"></i> Google Cloud Platform</li>
-                <li><i class="fab fa-google"></i> Firebase</li>
+                <li><i class="fab fa-microsoft"></i> Microsoft Azure</li>
               </ul>
             </div>
 
@@ -147,19 +170,16 @@
               <h1>Automation Tools</h1>
               <ul>
                 <li><i class="fab fa-docker"></i> Docker</li>
-                <li><i class="fas fa-file-code"></i> Dockerfile</li>
-                <li>pyenv</li>
-                <li>DBeaver</li>
-                <li>pgAdmin</li>
+                <li><i class="fab fa-python"></i> pyenv</li>
+                <li><i class="fas fa-database"></i> pgAdmin</li>
               </ul>
             </div>
 
             <div class="skill-list">
-              <h1>Security Tools</h1>
+              <h1>Data Analytics & Visualization</h1>
               <ul>
-                <li><i class="fas fa-shield-alt"></i> Wireshark</li>
-                <li><i class="fas fa-shield-alt"></i> Nmap</li>
-                <li><i class="fab fa-linux"></i> Kali Linux</li>
+                <li><i class="fas fa-chart-bar"></i> Power BI</li>
+                <li><i class="fas fa-chart-line"></i> Tablue</li>
               </ul>
             </div>
           </div>

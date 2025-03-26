@@ -4,7 +4,6 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:riya-portfolio": "node dist/riya-portfolio/server/server.mjs"
@@ -27,6 +26,7 @@
     "ionic-angular": "^3.9.10",
     "riya-portfolio": "file:",
     "rxjs": "~7.8.0",
+    "shubham-portfolio": "file:",
     "swiper": "^11.0.6",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"

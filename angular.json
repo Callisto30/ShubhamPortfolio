@@ -4,7 +4,11 @@
     "cache": {
       "environment": "all"
     },
+<<<<<<< Updated upstream
     "analytics": "d6cd75ac-1356-4b7b-b55a-ea5c2a07c2b5"
+=======
+    "analytics": "751bc803-bfe9-42bb-9299-700d18b685e2"
+>>>>>>> Stashed changes
   },
   "version": 1,
   "newProjectRoot": "projects",
